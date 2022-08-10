@@ -48,6 +48,7 @@ a {
   position: absolute;
   left: 7vw;
   top: 1vh;
+  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -56,6 +57,7 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 44vw;
+  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -68,6 +70,7 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 48vw;
+  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -80,6 +83,7 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 52vw;
+  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -92,6 +96,7 @@ a {
   font: 300 5vh/2 "Bodoni Moda";
   position: absolute;
   right: 7vw;
+  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -158,6 +163,7 @@ body .manu pre {
   text-align: right;
 }
 body .manu pre p {
+  cursor: pointer;
   opacity: 0.5;
 }
 body .manu pre p:hover {
