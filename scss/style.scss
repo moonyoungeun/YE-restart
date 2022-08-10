@@ -1,9 +1,143 @@
 //font family Oleo Script Swash Caps , Shadows Into Light ,DM Serif Display
 //Nuosu SIL ,Sawarabi Gothic ,Abril Fatface ,Carter One ,Noto Fonts,Noto Sans Korean ,Song Myung
-
+//Bodoni Moda , Rock Salt
 @import "reset";
 
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carter+One&family=DM+Serif+Display:ital@1&family=Noto+Sans+KR:wght@100;300;400;500&family=Nuosu+SIL&family=Oleo+Script+Swash+Caps&family=Sawarabi+Gothic&family=Shadows+Into+Light&family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Carter+One&family=DM+Serif+Display:ital@1&family=Noto+Sans+KR:wght@100;300;400;500&family=Nuosu+SIL&family=Oleo+Script+Swash+Caps&family=Rock+Salt&family=Sawarabi+Gothic&family=Shadows+Into+Light&family=Song+Myung&display=swap");
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  z-index: 100;
+
+  &:hover {
+    .header_logo {
+      transform: translateY(0vh);
+      opacity: 1;
+    }
+    .header_circle01,
+    .header_circle02,
+    .header_circle03 {
+      transform: translateY(0vh);
+      opacity: 1;
+    }
+    .header_menu {
+      transform: translateY(0vh);
+      opacity: 1;
+    }
+  }
+
+  .header_logo {
+    width: 8vh;
+    height: 8vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/ye-img/icon2-removebg-preview.png");
+    position: absolute;
+    left: 7vw;
+    top: 1vh;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  .header_circle01 {
+    font: 300 2vh/5 "Bodoni Moda";
+    position: absolute;
+    left: 44vw;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(-10vh);
+    opacity: 0;
+    color: white;
+    > a {
+      &:visited {
+        color: white;
+      }
+    }
+  }
+  .header_circle02 {
+    font: 300 2vh/5 "Bodoni Moda";
+    position: absolute;
+    left: 48vw;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(-10vh);
+    opacity: 0;
+    color: red;
+    > a {
+      &:visited {
+        color: red;
+      }
+    }
+  }
+  .header_circle03 {
+    font: 300 2vh/5 "Bodoni Moda";
+    position: absolute;
+    left: 52vw;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(-10vh);
+    opacity: 0;
+    color: rgb(99, 158, 253);
+    > a {
+      &:visited {
+        color: rgb(99, 158, 253);
+      }
+    }
+  }
+  .header_menu {
+    font: 300 5vh/2 "Bodoni Moda";
+    position: absolute;
+    right: 7vw;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+.header_opened {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  background-color: rgb(104, 168, 196);
+  // background: url("../img/HS/background.gif");
+  display: none;
+  color: #fff;
+  .header_item01 {
+    width: 80vw;
+    margin: 10vh 10vw;
+    // border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+      margin-bottom: 10vh;
+      transition: all 0.4s;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.807);
+      &:visited {
+        color: #fff;
+      }
+      &:nth-of-type(1) {
+        font: 900 12vh/1 "Bodoni Moda";
+        letter-spacing: 3px;
+      }
+      &:nth-of-type(2) {
+        font: 900 9vh/1 "Rock Salt";
+      }
+      &:nth-of-type(3) {
+        font: 900 12vh/1 "Nuosu SIL";
+      }
+      &:hover {
+        letter-spacing: -1px;
+        color: #fff;
+      }
+    }
+  }
+}
 
 body {
   background-color: rgb(104, 168, 196);
@@ -30,8 +164,8 @@ body {
     pre {
       position: absolute;
       font: 1.2vw/0.8vw "Sawarabi Gothic";
-      top: 2vw;
-      right: 4vw;
+      top: 5vw;
+      right: 1vw;
       text-align: right;
 
       p {
@@ -40,18 +174,18 @@ body {
     }
   }
 
-  .icon2 {
-    position: fixed;
-    width: 100%;
-    top: 1vw;
-    left: 2vw;
-    height: 5vw;
-    background-size: 6vw;
-    color: aliceblue;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-image: url("../img/ye-img/icon2-removebg-preview.png");
-  }
+  // .icon2 {
+  //   position: fixed;
+  //   width: 100%;
+  //   top: 1vw;
+  //   left: 2vw;
+  //   height: 5vw;
+  //   background-size: 6vw;
+  //   color: aliceblue;
+  //   z-index: 1;
+  //   background-repeat: no-repeat;
+  //   background-image: url("../img/ye-img/icon2-removebg-preview.png");
+  // }
 
   .YE01 {
     width: 100vw;
@@ -271,8 +405,8 @@ body {
       // top: 20vw;
       // left: 60vw;
       background-image: url("../gif/ye-gif/gif8.gif");
-      width: 100vw;
-      height: 100vw;
+      width: 85vw;
+      height: 92vw;
       background-repeat: no-repeat;
 
       // &:hover {

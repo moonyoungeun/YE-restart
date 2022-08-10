@@ -5,6 +5,17 @@ window.addEventListener("scroll", function () {
   console.log(scrollY);
 });
 
+const headerMenu = document.querySelector(".header_menu");
+const headerOpened = document.querySelector(".header_opened");
+
+headerMenu.addEventListener("click", function () {
+  if (headerOpened.style.display === "none") {
+    headerOpened.style.display = "flex";
+  } else {
+    headerOpened.style.display = "none";
+  }
+});
+
 // const cursor = document.querySelector(".cursor");
 // mouseEffect.addEventListener("mousemove", (e) => {
 //   cursor.style.left = `${e.clientX}px`;
