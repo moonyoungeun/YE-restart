@@ -3,6 +3,11 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overscroll-behavior: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
 }
 
 ul,
@@ -46,7 +51,7 @@ body .icon2 {
   color: aliceblue;
   z-index: 1;
   background-repeat: no-repeat;
-  background-image: url("../img/icon2-removebg-preview.png");
+  background-image: url("../img/ye-img/icon2-removebg-preview.png");
 }
 body .YE01 {
   width: 100vw;
@@ -111,6 +116,17 @@ body .YE01 .text p {
   top: 50vh;
   left: 20vw;
   width: 60vw;
+}
+.YE02 .ye02_icon {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 19vw;
+  left: 40vw;
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  background-image: url("../img/icon3.png");
+  opacity: 0.4;
 }
 .YE02 .ye02_gif {
   position: fixed;
@@ -190,9 +206,9 @@ body .YE01 .text p {
 }
 .ye03 .ye03_icon {
   background-image: url("../img/ye-img/icon3.png");
-  width: 100vw;
-  height: 100vh;
-  background-size: 7vw;
+  width: 10vw;
+  height: 10vw;
+  background-size: contain;
   position: fixed;
   top: 45vw;
   left: 48vw;
@@ -263,6 +279,16 @@ body .YE01 .text p {
   top: 50vw;
   left: 0vw;
 }
+.ye03 .ye04_icon {
+  background-image: url("../img/icon3.png");
+  height: 50vw;
+  width: 100vw;
+  position: fixed;
+  top: 20vw;
+  left: 43vw;
+  background-repeat: no-repeat;
+  background-size: 15vw;
+}
 .ye03 .main {
   position: fixed;
   top: 38vw;
@@ -276,6 +302,15 @@ body .YE01 .text p {
   left: 8vw;
   color: white;
   font: 1.2vw/1.3 "Noto Sans Korean";
+}
+
+@keyframes ye03_logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
