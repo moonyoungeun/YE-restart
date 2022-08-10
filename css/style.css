@@ -48,7 +48,6 @@ a {
   position: absolute;
   left: 7vw;
   top: 1vh;
-  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -57,7 +56,6 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 44vw;
-  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -70,7 +68,6 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 48vw;
-  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -83,7 +80,6 @@ a {
   font: 300 2vh/5 "Bodoni Moda";
   position: absolute;
   left: 52vw;
-  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -96,7 +92,6 @@ a {
   font: 300 5vh/2 "Bodoni Moda";
   position: absolute;
   right: 7vw;
-  cursor: pointer;
   transition: all 1s;
   transform: translateY(-10vh);
   opacity: 0;
@@ -143,6 +138,7 @@ a {
 }
 
 body {
+  cursor: url(../img/ye-img/icon2-curser3.cur) 20 30, url(../img/ye-img/icon2-curser3.cur) 20 30, auto;
   background-color: rgb(104, 168, 196);
   position: relative;
   overflow-x: hidden;
@@ -156,13 +152,18 @@ body .manu {
 }
 body .manu pre {
   position: absolute;
-  font: 1.2vw/0.8vw "Sawarabi Gothic";
+  font: 1.2vw/0.8vw "DM Serif Display";
   top: 5vw;
-  right: 1vw;
+  right: 0vw;
   text-align: right;
 }
 body .manu pre p {
-  cursor: pointer;
+  opacity: 0.5;
+}
+body .manu pre p:hover {
+  right: 1vw;
+  font: 2vw/0.8vw "DM Serif Display";
+  opacity: 1;
 }
 body .YE01 {
   width: 100vw;
